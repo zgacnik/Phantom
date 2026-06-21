@@ -1,5 +1,8 @@
+from flask import render_template
 from app import app
+from templates import *
+
 
 @app.route('/')
 def home():
-    return "<h1>Welcome to the Flaskassa!</h1>"
+    return render_template('index.html')
